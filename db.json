@@ -1,0 +1,718 @@
+{
+  "taxasBancos": [
+    {
+      "id": "1",
+      "banco": "Opção Poupança Padrão",
+      "taxaAnual": 6.17,
+      "tipo": "Rendimento da Poupança (Fixado por Lei)"
+    },
+    {
+      "id": "2",
+      "banco": "NuBank (RDB/Caixinha) - Aprox.",
+      "taxaAnual": 12,
+      "tipo": "100% do CDI (Alto) - Liquidez Diária"
+    },
+    {
+      "id": "3",
+      "banco": "Itaú/Bradesco (CDB) - Curto Prazo",
+      "taxaAnual": 11.5,
+      "tipo": "Aprox. 95% do CDI"
+    },
+    {
+      "id": "4",
+      "banco": "Banco do Brasil (LCA) - Pré-fixado",
+      "taxaAnual": 13.48,
+      "tipo": "Taxa Fixa para 1 ano (Líq. de IR)"
+    },
+    {
+      "id": "5",
+      "banco": "Bradesco (LCI) - Pré-fixado",
+      "taxaAnual": 12.8,
+      "tipo": "Taxa Fixa para 3 anos (Líq. de IR)"
+    },
+    {
+      "id": "6",
+      "banco": "Banco Inter (LCI) - Aprox.",
+      "taxaAnual": 11.56,
+      "tipo": "Aprox. 102% do CDI (Líq. de IR)"
+    },
+    {
+      "id": "7",
+      "banco": "Santander (CDB) - Longo Prazo",
+      "taxaAnual": 13.8,
+      "tipo": "Aprox. 115% do CDI"
+    },
+    {
+      "id": "8",
+      "banco": "SICOOB (CDB/RDC) - Aprox.",
+      "taxaAnual": 12.75,
+      "tipo": "Aprox. 105% do CDI"
+    },
+    {
+      "id": "9",
+      "banco": "Mercado Pago (Rendimento Conta) - Aprox.",
+      "taxaAnual": 11.8,
+      "tipo": "Aprox. 98% do CDI"
+    },
+    {
+      "id": "10",
+      "banco": "Taxa Histórica Alta (Benchmark)",
+      "taxaAnual": 15,
+      "tipo": "Exemplo de rentabilidade máxima de renda fixa"
+    }
+  ],
+  "perguntas": [
+    {
+      "id": "1",
+      "texto": "Seu carro quebrou e o conserto ficou caro. Você não tem reserva específica.",
+      "opcoes": [
+        {
+          "texto": "Parcelo no cartão (juros altos)",
+          "impacto": -1500
+        },
+        {
+          "texto": "Pego empréstimo no banco",
+          "impacto": -2000
+        },
+        {
+          "texto": "Vendo algo usado para pagar à vista",
+          "impacto": -800
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "texto": "Promoção de TV 4K: De R$ 3.000 por R$ 2.500. Você tem o dinheiro na Reserva de Emergência.",
+      "opcoes": [
+        {
+          "texto": "Compro! O desconto é bom.",
+          "impacto": -2500
+        },
+        {
+          "texto": "Não compro. Reserva é sagrada.",
+          "impacto": 0
+        },
+        {
+          "texto": "Compro parcelado para não zerar a reserva",
+          "impacto": -3000
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "texto": "Sobrou R$ 2.000 de um trabalho extra. Onde investe?",
+      "opcoes": [
+        {
+          "texto": "Poupança (seguro e tradicional)",
+          "impacto": 2100
+        },
+        {
+          "texto": "Tesouro IPCA+ (ganho real)",
+          "impacto": 2300
+        },
+        {
+          "texto": "Aposto tudo em um jogo online",
+          "impacto": -2000
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "texto": "Um amigo chamou para abrir um negócio. Investimento inicial: R$ 3.000.",
+      "opcoes": [
+        {
+          "texto": "Topo sem pensar!",
+          "impacto": -3000
+        },
+        {
+          "texto": "Estudo o mercado primeiro.",
+          "impacto": 0
+        },
+        {
+          "texto": "Recuso e invisto em CDB.",
+          "impacto": 3300
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "texto": "A inflação subiu muito. Seu dinheiro está parado na conta corrente.",
+      "opcoes": [
+        {
+          "texto": "Deixo lá mesmo.",
+          "impacto": -200
+        },
+        {
+          "texto": "Gasto tudo logo.",
+          "impacto": -1000
+        },
+        {
+          "texto": "Movo para uma conta que rende 100% do CDI.",
+          "impacto": 100
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "texto": "Liquidação de roupas de marca.",
+      "opcoes": [
+        {
+          "texto": "Compro só o necessário.",
+          "impacto": -150
+        },
+        {
+          "texto": "Estouro o limite do cartão.",
+          "impacto": -2000
+        },
+        {
+          "texto": "Não compro nada.",
+          "impacto": 0
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "texto": "Férias chegando! Viagem dos sonhos custa R$ 4.000.",
+      "opcoes": [
+        {
+          "texto": "Vou e parcelo em 12x.",
+          "impacto": -4800
+        },
+        {
+          "texto": "Escolho um destino mais barato que cabe no bolso.",
+          "impacto": -1500
+        },
+        {
+          "texto": "Fico em casa.",
+          "impacto": 0
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "texto": "O gerente ofereceu um Título de Capitalização.",
+      "opcoes": [
+        {
+          "texto": "Aceito pelo sorteio.",
+          "impacto": -100
+        },
+        {
+          "texto": "Recuso. Rende pouco.",
+          "impacto": 50
+        },
+        {
+          "texto": "Aceito para ajudar o gerente.",
+          "impacto": -200
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "texto": "Aluguel caro ou Financiamento longo?",
+      "opcoes": [
+        {
+          "texto": "Financiamento (juros altos agora).",
+          "impacto": -1500
+        },
+        {
+          "texto": "Aluguel barato e invisto a sobra.",
+          "impacto": 500
+        },
+        {
+          "texto": "Morar de favor.",
+          "impacto": 1000
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "texto": "Recebeu o salário. Qual a primeira coisa a fazer?",
+      "opcoes": [
+        {
+          "texto": "Pagar boletos e gastar o resto.",
+          "impacto": 0
+        },
+        {
+          "texto": "Separar o investimento primeiro (Pague-se primeiro).",
+          "impacto": 500
+        },
+        {
+          "texto": "Churrasco!",
+          "impacto": -300
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "texto": "Fatura do cartão veio alta (R$ 2.000).",
+      "opcoes": [
+        {
+          "texto": "Pago o mínimo e rolo a dívida.",
+          "impacto": -2500
+        },
+        {
+          "texto": "Uso a reserva para quitar à vista.",
+          "impacto": -2000
+        },
+        {
+          "texto": "Pego empréstimo pessoal (juros menores que o cartão).",
+          "impacto": -2100
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "texto": "Curso caro (R$ 1.500) que melhora seu currículo.",
+      "opcoes": [
+        {
+          "texto": "Faço o curso (Investimento).",
+          "impacto": 500
+        },
+        {
+          "texto": "Acho caro, não faço.",
+          "impacto": 0
+        },
+        {
+          "texto": "Gasto esse dinheiro em festas.",
+          "impacto": -1500
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "texto": "Fome no shopping.",
+      "opcoes": [
+        {
+          "texto": "Restaurante chique.",
+          "impacto": -200
+        },
+        {
+          "texto": "Fast food.",
+          "impacto": -50
+        },
+        {
+          "texto": "Seguro a fome e como em casa.",
+          "impacto": 0
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "texto": "Promessa de dinheiro fácil e rápido na internet.",
+      "opcoes": [
+        {
+          "texto": "Invisto R$ 1.000 pra testar.",
+          "impacto": -1000
+        },
+        {
+          "texto": "Ignoro, é golpe.",
+          "impacto": 0
+        },
+        {
+          "texto": "Chamo amigos para entrar também.",
+          "impacto": -2000
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "texto": "Sobrou R$ 200 no fim do mês.",
+      "opcoes": [
+        {
+          "texto": "Gasto com delivery.",
+          "impacto": -200
+        },
+        {
+          "texto": "Deixo na conta.",
+          "impacto": 0
+        },
+        {
+          "texto": "Compro cotas de FIIs.",
+          "impacto": 210
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "texto": "Carro bebendo muita gasolina. Gasto mensal: R$ 800.",
+      "opcoes": [
+        {
+          "texto": "Troco por um carro zero (dívida nova).",
+          "impacto": -5000
+        },
+        {
+          "texto": "Reviso a mecânica e dirijo menos.",
+          "impacto": -400
+        },
+        {
+          "texto": "Continuo igual.",
+          "impacto": -800
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "texto": "Casamento à vista.",
+      "opcoes": [
+        {
+          "texto": "Festa ostentação parcelada.",
+          "impacto": -10000
+        },
+        {
+          "texto": "Cerimônia simples e econômica.",
+          "impacto": -2000
+        },
+        {
+          "texto": "Apenas civil.",
+          "impacto": -500
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "texto": "Serviços de Streaming.",
+      "opcoes": [
+        {
+          "texto": "Assino todos (R$ 200/mês).",
+          "impacto": -200
+        },
+        {
+          "texto": "Assino só um e revezo.",
+          "impacto": -40
+        },
+        {
+          "texto": "Uso conta emprestada.",
+          "impacto": 0
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "texto": "Notebook de trabalho pifou.",
+      "opcoes": [
+        {
+          "texto": "Compro um Gamer de última geração (R$ 6.000).",
+          "impacto": -6000
+        },
+        {
+          "texto": "Compro um usado barato.",
+          "impacto": -1000
+        },
+        {
+          "texto": "Compro um intermediário custo-benefício.",
+          "impacto": -3000
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "texto": "Taxa de conta bancária R$ 50/mês.",
+      "opcoes": [
+        {
+          "texto": "Pago sem reclamar.",
+          "impacto": -50
+        },
+        {
+          "texto": "Peço isenção ou mudo para banco digital.",
+          "impacto": 0
+        },
+        {
+          "texto": "Cancelo a conta e guardo dinheiro em casa.",
+          "impacto": -10
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "texto": "Restituição do Imposto de Renda: R$ 1.500.",
+      "opcoes": [
+        {
+          "texto": "Churrasco!",
+          "impacto": -1500
+        },
+        {
+          "texto": "Quito dívidas.",
+          "impacto": 1600
+        },
+        {
+          "texto": "Invisto tudo.",
+          "impacto": 1650
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "texto": "Amigo pediu R$ 500 emprestado.",
+      "opcoes": [
+        {
+          "texto": "Empresto (risco de calote).",
+          "impacto": -500
+        },
+        {
+          "texto": "Não empresto.",
+          "impacto": 0
+        },
+        {
+          "texto": "Empresto com juros.",
+          "impacto": -450
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "texto": "Cinema no fim de semana.",
+      "opcoes": [
+        {
+          "texto": "Ingresso + Pipoca Grande + Refri.",
+          "impacto": -120
+        },
+        {
+          "texto": "Só ingresso.",
+          "impacto": -40
+        },
+        {
+          "texto": "Streaming em casa.",
+          "impacto": -10
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "texto": "Tênis furado.",
+      "opcoes": [
+        {
+          "texto": "Compro o da moda (R$ 800).",
+          "impacto": -800
+        },
+        {
+          "texto": "Compro um bom em promoção (R$ 250).",
+          "impacto": -250
+        },
+        {
+          "texto": "Uso chinelo.",
+          "impacto": 0
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "texto": "Aumento de salário de R$ 500.",
+      "opcoes": [
+        {
+          "texto": "Aumento meu padrão de vida imediatamente.",
+          "impacto": -500
+        },
+        {
+          "texto": "Invisto a diferença.",
+          "impacto": 2000
+        },
+        {
+          "texto": "Gasto metade, invisto metade.",
+          "impacto": 1000
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "texto": "Chuveiro queimou.",
+      "opcoes": [
+        {
+          "texto": "Compro um eletrônico turbo (R$ 400).",
+          "impacto": -400
+        },
+        {
+          "texto": "Troco a resistência (R$ 30).",
+          "impacto": -30
+        },
+        {
+          "texto": "Banho gelado.",
+          "impacto": 0
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "texto": "Aprender inglês.",
+      "opcoes": [
+        {
+          "texto": "Curso presencial caro (R$ 600/mês).",
+          "impacto": -600
+        },
+        {
+          "texto": "Estudo online gratuito.",
+          "impacto": 100
+        },
+        {
+          "texto": "Não preciso.",
+          "impacto": -50
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "texto": "Gasolina cara.",
+      "opcoes": [
+        {
+          "texto": "Continuo indo de carro pra tudo.",
+          "impacto": -300
+        },
+        {
+          "texto": "Vou de carona ou ônibus.",
+          "impacto": -50
+        },
+        {
+          "texto": "Vendo o carro.",
+          "impacto": 5000
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "texto": "Dica de Criptomoeda 'Mágica'.",
+      "opcoes": [
+        {
+          "texto": "Compro na hora (Risco).",
+          "impacto": -1000
+        },
+        {
+          "texto": "Estudo antes.",
+          "impacto": 0
+        },
+        {
+          "texto": "Fujo.",
+          "impacto": 0
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "texto": "Seguro do carro venceu (R$ 2.000).",
+      "opcoes": [
+        {
+          "texto": "Não renovo (Economizo agora).",
+          "impacto": 2000
+        },
+        {
+          "texto": "Renovo (Segurança).",
+          "impacto": -2000
+        },
+        {
+          "texto": "Renovo só contra terceiros.",
+          "impacto": -1000
+        }
+      ]
+    }
+  ],
+  "clientes": [
+    {
+      "id": "be43",
+      "nome": "Gabriela Campelo",
+      "idade": "20",
+      "telefone": "(31)98566-4568",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "renda": 5000,
+      "email": "g@gmail.com",
+      "senha": "123",
+      "categoria": "Preferencial"
+    }
+  ],
+  "despesas": [
+    {
+      "id": "c240",
+      "userId": "be43",
+      "nome": "Aluguel",
+      "valor": 900,
+      "tipo": "Fixa",
+      "data": "2025-12-01T15:00:00.000Z",
+      "isMeta": false
+    },
+    {
+      "id": "b5f2",
+      "userId": "be43",
+      "nome": "Alimentação",
+      "valor": 500,
+      "tipo": "Fixa",
+      "data": "2025-12-01T15:00:00.000Z",
+      "isMeta": false
+    },
+    {
+      "id": "35ec",
+      "userId": "be43",
+      "nome": "Contas",
+      "valor": 150,
+      "tipo": "Fixa",
+      "data": "2025-12-01T15:00:00.000Z",
+      "isMeta": false
+    },
+    {
+      "id": "f6aa",
+      "userId": "be43",
+      "nome": "Internet",
+      "valor": 110,
+      "tipo": "Fixa",
+      "data": "2025-12-01T15:00:00.000Z",
+      "isMeta": false
+    },
+    {
+      "id": "0c93",
+      "userId": "be43",
+      "nome": "Transporte",
+      "valor": 200,
+      "tipo": "Fixa",
+      "data": "2025-12-01T15:00:00.000Z",
+      "isMeta": false
+    },
+    {
+      "id": "66f9",
+      "userId": "be43",
+      "nome": "Academia",
+      "valor": 110,
+      "tipo": "Variavel",
+      "data": "2025-12-01T15:00:00.000Z",
+      "isMeta": false
+    },
+    {
+      "id": "46f9",
+      "userId": "be43",
+      "nome": "Lazer",
+      "valor": 200,
+      "tipo": "Variavel",
+      "data": "2025-12-01T15:00:00.000Z",
+      "isMeta": false
+    }
+  ],
+  "metas": [
+    {
+      "id": "6c1e",
+      "userId": "be43",
+      "nome": "Viagem Ano Novo (Amigos)",
+      "valorTotal": 4000,
+      "prazo": "2026-12-12"
+    },
+    {
+      "id": "b2a9",
+      "userId": "be43",
+      "nome": "Fundo de Investimentos em 1 ano",
+      "valorTotal": 2000,
+      "prazo": "2026-12-31"
+    }
+  ],
+  "excecoes": [],
+  "aportesMetas": [
+    {
+      "id": "0c13",
+      "userId": "be43",
+      "metaId": "6c1e",
+      "valor": 333.33,
+      "data": "2025-12-01T15:00:00.000Z"
+    },
+    {
+      "id": "537c",
+      "userId": "be43",
+      "metaId": "b2a9",
+      "valor": 166.67,
+      "data": "2025-12-01T15:00:00.000Z"
+    }
+  ]
+}
